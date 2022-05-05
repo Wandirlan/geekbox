@@ -127,11 +127,12 @@ input {
 
 .categoriasLinha{
   margin: 20px 0;
-  width: calc(200% + 30px);
+  width: calc(170% + 30px);
   
 }
 
 ::-webkit-scrollbar{
+  display: none;
   background-color: #c4c4c4;
   border-radius: 8px;
   height: 4px;
@@ -155,7 +156,7 @@ input {
   list-style-type: none;
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(128, 128, 128, 0.264);
+  border: 2px solid rgba(128, 128, 128, 0.1);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -163,12 +164,12 @@ input {
 }
 
 .categoriasLinha ul li a {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .categoriasLinha ul li a img {
-  width: 40px;
+  width: 45px;
   
 }
 /* Footer */
