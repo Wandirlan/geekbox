@@ -196,8 +196,8 @@ input {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 5% auto;
-  gap: 10px;
+  margin: 10% auto;
+  gap: 20px;
 }
 
 .itensBox p {
@@ -219,6 +219,82 @@ input {
 }
 
 /* fim itens da caixa */
+
+/* Assinatura */
+
+.boxAssinatura {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 5% 0;
+} 
+
+.logoAssinatura img{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carrosselAssinatura {
+  width: 100%;
+  overflow: auto;
+  margin: 10% 0;
+}
+
+.carrosselAssinatura ul {
+  display: flex;
+  width: 250%;
+  gap: 5%;
+  padding: 0 5%;
+}
+
+.carrosselAssinatura ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f2eff;
+  border: 2px solid rgba(255, 255, 255, 0.382);
+  border-radius: 8px;
+  height: 35vh;
+  gap: 5%;
+  list-style: none;
+}
+
+.carrosselAssinatura ul li a img {
+  width: 100%;
+}
+
+.tituloProduto {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: rgba(128, 128, 128, 0.836);
+}
+
+.precoProduto {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.carrosselAssinatura ul li button {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+/* Fim Assinatura */
 /* Footer */
 
 footer{
