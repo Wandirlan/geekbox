@@ -228,8 +228,9 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("/images/Assinatura/purpleground.jpeg") ;
-  background-size: cover;
+  background-image: url("/images/Assinatura/Background.png") ;
+  background-color: ;
+  background-size: contain;
   padding: 5% 0;
 } 
 
@@ -257,10 +258,10 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 0.679);
+  background-color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.382);
   border-radius: 8px;
-  height: 35vh;
+  height: 40vh;
   gap: 5%;
   list-style: none;
 }
@@ -269,31 +270,45 @@ input {
   width: 100%;
 }
 
-.tituloProduto {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  background-color: #ff335a;
+.boxDescricao {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background-color: black;
+  margin: 0 auto;
+  padding: 5px 0;
 }
 
-.precoProduto {
+.boxDescricao span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fcda03;
+}
+
+.boxDescricao p {
+
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
+  font-size: 8px;
 }
+
+/* .precoProduto {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+} */
 
 .carrosselAssinatura ul li button {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  background-color: green;
+  font-size: 10px;
+  background-color: #02c406;
   border: none;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: 15px;
+  margin-top: 5%;
 }
 /* Fim Assinatura */
 
@@ -305,34 +320,34 @@ input {
   align-items: center;
   justify-content:center;
   width: 100%;
+  margin: 10% auto;
 }
 
 
 
 .logoDepoimento{
   display: flex;
-  flex-direction: column;
+  gap: 5px;
   align-items: center;
   justify-content: center;
-  margin: 10% 5%;
+  margin: 5% 5%;
+  background: #7f2eff;
+  border-radius:8px;
+  padding: 5px;
+  align-items: flex-end;
+
 }
 
 .logoDepoimento p {
-  color: grey;
+  color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-}
-
-.logoDepoimento h5 {
-  color: grey;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 .depoimentos{
   width: 100%;
   overflow: hidden;
+  margin: 5% 0;
 }
 
 .depoimentoCliente ul {
@@ -345,15 +360,92 @@ input {
 
 .depoimentoCliente ul li {
   display: flex;
-  width: 100%;
+  width: 300%;
   gap: 10%;
   position: relative;
-  left: -33.3%;
   padding: 0 3%;
+  animation: slide 15s infinite ease-out;
+}
+  
+@keyframes slide {
+  0%{left: 0px}
+  20%{left: 0px}
+  30%{left: -33.3%}
+  50%{left: -33.3%}
+  60%{left: -66.6%}
+  90%{left: -66.6%}
+  100%{left: 0px}
 }
 
+
 .depoimentoCliente ul li img {
-  width: 50%;
+  width: 40%;
+}
+
+.depoimentoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 5%;
+}
+
+.depoimentoCard span {
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.depoimentoCard p{
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+/* Fim depoimento cliente */
+
+/* Unboxing */
+
+.unboxing {
+  width: 100%;
+  background-color: #ff335a;
+  padding: 5% 0;
+  margin: 50px 0;
+}
+
+.unboxingTitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 5%;
+}
+
+.unboxingTituloBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.unboxingTituloBar img {
+  width: 32px;
+}
+.unboxingTituloBar p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.unboxingTitulo iframe {
+  width: 90%;
+  height: 250px;
+  border-radius: 8px;
+  margin: 10px 0;
 }
 /* Footer */
 
