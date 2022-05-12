@@ -130,7 +130,7 @@ nav ul li a:hover{
   background-color: #fff;
 }
 
-input {
+.slides input {
   display:none;
 }
 
@@ -612,3 +612,41 @@ footer{
 }
 
 /* Fim Footer */
+
+
+/* login */ 
+
+.login {
+  background-color: rgb(162, 162, 162);
+  height: 100vh;
+}
+
+.logoLogin {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+}
+
+.cuboLogin a img {
+  width: 100px;
+}
+
+.marcaLogin a img {
+  width: 200px;
+}
+
+.formLogin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.formLogin form input{
+  border: 1px solid grey;
+  background-image: url("/images/Login/user.png");
+
+}
