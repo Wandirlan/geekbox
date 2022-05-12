@@ -1,6 +1,9 @@
 const clienteController = {
     login: (req, res) => {
-        res.render('login')
+        res.render('login');
+    },
+    cadastro: (req, res) => {
+        res.render('cadastroCliente');
     }
 };
 

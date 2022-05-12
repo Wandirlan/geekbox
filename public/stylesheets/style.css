@@ -26,8 +26,8 @@ header {
 
 button:focus ~ nav {
   display: fixed;
-  z-index: 100;
-  width: 60%;
+  z-index: 1000;
+  width: 70%;
   
 }
 
@@ -616,42 +616,47 @@ footer{
 
 /* login */ 
 
-.voltarHome {
-  width: 100%;
-  background-color: rgb(162, 162, 162);
-  height: 4vh;
-  border: none;
-  display: flex;
-}
+
 
 .voltarHome button {
-  border: none;
-  font-size: 18px;
-  width: 10%;
+  border: none; 
   color: #fff;
-  background-color:rgba(190, 98, 11, 0.572);
+  background-color:transparent;
   border-radius: 8px;
-  margin: 5px;
+  margin: 10px;
+  padding: 5px;
+ width: 35px;
 }
 
 .voltarHome button a {
-  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
 } 
 
+.voltarHome a img {
+ height: 3vh;
+}
+
 .login {
-  background-color: rgb(162, 162, 162);
-  height: 96vh;
+  background-color: #ff335a;
+  height: 100vh;
+}
+
+.logoForm {
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
+  width: 100%;
+  height: 80vh;
 }
 
 .logoLogin {
   display: flex;
   justify-content:center;
   align-items:center;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .cuboLogin a img {
@@ -726,3 +731,109 @@ footer{
   width: 18px;
 
 } 
+
+.ctaEntrar {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ctaEntrar button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none; 
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: linear-gradient(91.88deg, rgba(2, 196, 6, 0.84) 0%, #70FA73 100%);
+}
+
+.ctaEntrar a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.loginRedeSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: center;
+  width: 50%;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.loginRedeSocial button {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.loginRedeSocial button  a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: grey;
+}
+.loginRedeSocial button a img {
+  width: 20px;
+}
+
+.linkCadastro {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.linkCadastro p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  text-align: center;
+}
+
+.linkCadastro p a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  text-decoration:none;
+} 
+
+/* Fim login */
+
+/* Cadastro Cliente */ 
+
+.headerCadastroCliente {
+  width: 100%;
+  height: 8vh;
+  background-color: #ff335a;
+  display: flex;
+  align-items: center;
+}
+
+.logoLoginHeader {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 70%;
+  margin: 0 auto;
+}
+.headerCadastroCliente .logoLoginHeader .cuboLogin a img {
+  width: 35px;
+}
+
+.headerCadastroCliente .logoLoginHeader .marcaLogin a img {
+  width: 121px;
+}

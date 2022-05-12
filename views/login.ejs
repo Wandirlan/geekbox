@@ -1,36 +1,50 @@
 <%- include("./admin/partials/head") %>
 
 
-<div class="voltarHome">
-    <button><a href="/">&lt;</a> </button>
-    
-</div>
-
 <section class="login">
-    <div class="logoLogin">
-        <div class="cuboLogin">
-            <a href="">
-                <img src="/images/CuboWhitw.png" alt="GeekBox">
-            </a>
-        </div>
-        <div class="marcaLogin">
-            <a href="">
-                <img src="/images/MarcaWhith.png" alt="GeekBox">
-            </a>
-        </div>
 
+    <div class="voltarHome">
+        <button><a href="/"><img src="/images/chevron-pointing-to-the-left.png" alt=""></a> </button>
     </div>
+    <div class="logoForm">
+        <div class="logoLogin">
+            <div class="cuboLogin">
+                <a href="">
+                    <img src="/images/CuboWhitw.png" alt="GeekBox">
+                </a>
+            </div>
+            <div class="marcaLogin">
+                <a href="">
+                    <img src="/images/MarcaWhith.png" alt="GeekBox">
+                </a>
+            </div>
 
-    <div class="formLogin">
-        <form action="">
-            <div class="dadosForm1">
-                <input type="email" name="email" id="email" placeholder="Informe seu e-mail">
-                <span><img src="/images/Login/user.png" alt=""></span>
+        </div>
+
+        <div class="formLogin">
+            <form action="">
+                <div class="dadosForm1">
+                    <input type="email" name="email" id="email" placeholder="Informe seu e-mail">
+                    <span><img src="/images/Login/user.png" alt=""></span>
+                </div>
+                <div class="dadosForm2">
+                    <input type="password" name="senha" id="senha" placeholder="Informe sua senha">
+                    <span><img src="/images/Login/padlock.png" alt=""></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="ctaEntrar">
+            <button>Entrar</button>
+            <a href=""><p>Esqueceu a senha?</p></a>
+        </div>
+
+        <div class="loginRedeSocial">
+            <button><a href=""><img src="/images/google.png" alt="">Entrar com o Google</a></button>
+            <button><a href=""><img src="/images/facebook.png" alt="">Entrar com o Facebook</a></button>
+            <div class="linkCadastro">
+                <p>Ainda não possui uma conta? <a href="/cliente/cadastro">Cadastre-se</a></p>
             </div>
-            <div class="dadosForm2">
-                <input type="password" name="senha" id="senha" placeholder="Informe sua senha">
-                <span><img src="/images/Login/padlock.png" alt=""></span>
-            </div>
-        </form>
+        </div>
     </div>
 </section>
