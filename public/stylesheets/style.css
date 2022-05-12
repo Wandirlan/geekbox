@@ -616,9 +616,35 @@ footer{
 
 /* login */ 
 
+.voltarHome {
+  width: 100%;
+  background-color: rgb(162, 162, 162);
+  height: 4vh;
+  border: none;
+  display: flex;
+}
+
+.voltarHome button {
+  border: none;
+  font-size: 18px;
+  width: 10%;
+  color: #fff;
+  background-color:rgba(190, 98, 11, 0.572);
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.voltarHome button a {
+  text-decoration: none;
+  color: #fff;
+} 
+
 .login {
   background-color: rgb(162, 162, 162);
-  height: 100vh;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
 }
 
 .logoLogin {
@@ -640,13 +666,63 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   gap: 20px;
 }
 
-.formLogin form input{
-  border: 1px solid grey;
-  background-image: url("/images/Login/user.png");
+.dadosForm1 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosForm1 input{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 40px;
 
 }
+
+.dadosForm1 span {
+  position: absolute;
+  right: 10px;
+}
+
+.dadosForm1 span img{
+  width: 18px;
+
+} 
+
+.dadosForm2 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosForm2 input{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 40px;
+
+}
+
+.dadosForm2 span {
+  position: absolute;
+  right: 10px;
+}
+
+.dadosForm2 span img{
+  width: 18px;
+
+} 
