@@ -1,6 +1,6 @@
 <%- include("./admin/partials/head") %>
 
-<section class="cadastrocliente">
+<section class="cadastroCliente">
     <div class="headerCadastroCliente">
         <div class="voltarHome">
             <button><a href="/"><img src="/images/chevron-pointing-to-the-left.png" alt=""></a> </button>
@@ -19,5 +19,40 @@
 
         </div>
     </div>
+    <div class="tagCadastro">
+        <img src="/images/man.png" alt="">
+        <p>Cadastro de Novos Clientes</p>
+    </div>
+    <form action="" class="formCadastroCliente">
+        <div class="dadosPessoais">
+            <p>Dados Pessoais</p>
+            <div>
+                <input type="text" placeholder="*Nome:" id="nameCadastro" name="nameCadastro" required>
+                <input type="email" placeholder="*E-mail:" id="emailCadastro" name="emailCadastro" required>
+                <input type="date" placeholder="Data de nascimento:" id="dataNascimentoCadastro" name="dataNascimentoCadastro">
+                <input type="text" placeholder="*CPF: 000.000.000-00" id="cpfCadastro" name="cpfCadastro" maxlength="14" minlength="14" required>
+                <input type="text" placeholder="*Celular:" id="celularCadastro" name="celularCadastro" required>
+                <input type="password" placeholder="*Senha:" id="senhaCadastro" name="senhaCadastro" required>
+                <input type="password" placeholder="*Digite a Senha Novamente:" id="nameCadastro" name="nameCadastro" required>
+            </div>
+        </div>
+        <div class="dadosEntrega">
+            <p>Dados de entrega</p>
+            <div>
+                <input type="text" placeholder="*CEP:" name="cepCadastro" id="cepCadastro">
+                <input type="text" placeholder="*Endereço:" name="enderecoCadastro" id="enderecoCadastro">
+                <input type="text" placeholder="*Número:" name="numeroCadastro" id="numeroCadastro">
+                <input type="text" placeholder="Complemento:" name="complementoCadastro" id="complementoCadastro">
+                <input type="text" placeholder="*Bairro:" name="bairroCadastro" id="bairroCadastro">
+                <input type="text" placeholder="*Cidade:" name="cidadeCadastro" id="cidadeCadastro">
+                <input type="text" placeholder="*Estado:" name="estadoCadastro" id="estadoCadastro">
+                <input type="text" placeholder="*País:" name="paisCadastro" id="paisCadastro">
+            </div>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
 
 </section>
+
+<%- include("./admin/partials/footer") %>

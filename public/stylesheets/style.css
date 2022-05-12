@@ -28,6 +28,7 @@ button:focus ~ nav {
   display: fixed;
   z-index: 1000;
   width: 70%;
+
   
 }
 
@@ -639,7 +640,7 @@ footer{
 }
 
 .login {
-  background-color: #ff335a;
+  background: conic-gradient(from -55.33deg at 121.12% -10.32%, #000000 0deg, #000000 180deg, #FF335A 266.74deg, #000000 360deg);
   height: 100vh;
 }
 
@@ -733,8 +734,8 @@ footer{
 } 
 
 .ctaEntrar {
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -812,10 +813,11 @@ footer{
 
 /* Cadastro Cliente */ 
 
+
 .headerCadastroCliente {
   width: 100%;
   height: 8vh;
-  background-color: #ff335a;
+  background-color: #ff335a; 
   display: flex;
   align-items: center;
 }
@@ -837,3 +839,137 @@ footer{
 .headerCadastroCliente .logoLoginHeader .marcaLogin a img {
   width: 121px;
 }
+
+.tagCadastro {
+  height:6vh;
+  background-color: rgb(132, 132, 132);
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.tagCadastro img {
+  width: 35px;
+  margin-left: 15px;
+}
+
+.tagCadastro p {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+} 
+
+
+.formCadastroCliente {
+
+  height: 100%;
+  width: 100%;
+ 
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formCadastroCliente p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: grey;
+
+}
+
+.divFormCadastroCliente {
+  display: flex;
+  flex-direction: column;
+  width:1005;
+}
+
+.dadosPessoais {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.dadosPessoais div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #e5e5e5;
+  padding: 30px;
+  width: 100%;
+  border-radius: 8px;
+
+}
+
+.dadosPessoais div input{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+
+}
+
+
+
+
+.dadosEntrega input{
+  width: 100%;
+}
+
+.dadosEntrega {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.dadosEntrega div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #e5e5e5;
+  padding: 30px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.dadosEntrega div input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.formCadastroCliente button {
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none; 
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: linear-gradient(91.88deg, rgba(2, 196, 6, 0.84) 0%, #70FA73 100%);
+}
+
