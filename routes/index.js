@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var geekboxController = require('../controllers/geekboxController')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', geekboxController.home);
+router.post('/', geekboxController.home); 
 
 module.exports = router;
